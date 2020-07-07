@@ -11,9 +11,15 @@ $(function () {
             $(".navbar-toggler").click();
         })
     }
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 101.59) {
+            $('.fixed-top').css({ top: 0, position: 'fixed' });
+        }
+        else $('.fixed-top').css({ top: '100%', position: 'absolute' })
+    })
     $(".btn_top").on('click', function () {
         $('html, body').animate({
-            scrollTop: $('#header').offset().top - 80
+            scrollTop: $('header').offset().top - 80
         }, 600);
     });
 
@@ -24,25 +30,29 @@ $(function () {
         else $(".btn_top").fadeOut();
     })
 
-    $("#cloud_flatform").owlCarousel({
+    $("#header-banner").owlCarousel({
         nav: true,
         items: 1,
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,
-        navText: ["<img src='./assets/images/arrorw_left.png' >", "<img src='./assets/images/arrorw_right.png' >"],
+        navText: ["<img src='./assets/images/arrorw_left.png' class='img-fluid' >", "<img src='./assets/images/arrorw_right.png' class='img-fluid' >"],
         mouseDrag: true,
-        touchDrag: true
+        touchDrag: true,
+        margin: 50,
+        smartSpeed: 1000,
     });
-    $("#ip_flatform").owlCarousel({
+    $("#camnhan-slider").owlCarousel({
         nav: true,
         items: 1,
         loop: true,
+        dots: false,
         autoplay: true,
         autoplayTimeout: 5000,
-        navText: ["<img src='./assets/images/arrorw_left.png' >", "<img src='./assets/images/arrorw_right.png' >"],
+        navText: ["<img src='./assets/images/arrorw_left.png' class='img-fluid' >", "<img src='./assets/images/arrorw_right.png' class='img-fluid' >"],
         mouseDrag: true,
-        touchDrag: true
+        touchDrag: true,
+        margin: 50
     });
 })
 
@@ -85,19 +95,15 @@ function kiemtra() {
         $('#email').focus();
         return false;
     }
-    else if ($('#company').val() == "") {
-        alert("Vui lòng nhập Họ tên!");
-        $('#company').focus();
-    }
     else {
         const phone = $('#phone').val();
         const fullname = $('#fullname').val();
         const email = $('#email').val();
-        const company = $('#company').val();
+
         $.ajax({
             type: "POST",
             url: "api/register.php",
-            data: { fullname: fullname, email: email, phone: phone, company: company },
+            data: { fullname: fullname, email: email, phone: phone },
             success: function (data) {
                 data = JSON.parse(data);
                 if (data.result === "0") {

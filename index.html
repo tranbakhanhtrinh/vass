@@ -7,10 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hệ thống Trường Việt Mỹ đào tạo song ngữ từ Mầm Non,Lớp 1-Lớp 12.</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
     <script type="text/javascript">
         function writeCookie(name, value, days) {
             var date, expires;
@@ -65,9 +72,30 @@
             writeCookie("utm_content", utm_content, 30);
         }
     </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WPZ85ZT');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="80">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPZ85ZT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="btn_top">
         <figure>
             <img src="./assets/images/btn_top.png" alt="" class="img-fluid">
@@ -133,17 +161,50 @@
                 <div class="row">
                     <div class="col-12 pad0">
                         <div class="owl-carousel owl-theme" id="header-banner">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="./assets/images/banner1.jpg">
-                                    <img src="./assets/images/banner1.jpg" alt="Banner 1" class="img-fluid">
-                                </picture>
+                            <div class="item banner1">
+                                <div class="row">
+                                    <div class="col-md-6 my-auto">
+                                        <div class="banner1-left">
+                                            <p>
+                                                ƯU ĐÃI GHI DANH
+                                            </p>
+                                            <div class="banner1-text">
+                                                <p>
+                                                    Đăng kí ngay hôm nay để <span></span>
+                                                    nhận được ưu đãi lên đến <span></span>
+                                                    4.000.000 VNĐ
+                                                </p>
+                                            </div>
+                                            <button type="button" class="dk">ĐĂNG KÍ NGAY</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <picture>
+                                            <source srcset="./assets/images/banner1-hinh.png">
+                                            <img src="./assets/images/banner1-hinh.png" alt="Banner - hình 1" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="item">
-                                <picture>
-                                    <source srcset="./assets/images/banner1.jpg">
-                                    <img src="./assets/images/banner1.jpg" alt="Banner 1" class="img-fluid">
-                                </picture>
+                            <div class="item banner2">
+                                <div class="row">
+                                    <div class="col-md-6 my-auto">
+                                        <ul>
+                                            <li>THAM QUAN TRƯỜNG HỌC</li>
+                                            <li>KIỂM TRA TIẾNG ANH ĐẦU VÀO</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5 offset-md-1">
+                                        <picture>
+                                            <source srcset="./assets/images/banner2-hinh.png">
+                                            <img src="./assets/images/banner2-hinh.png" alt="Banner - hình 2" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                    <picture class="shape">
+                                        <source srcset="./assets/images/shape.png">
+                                        <img src="./assets/images/shape.png" alt="Banner - hình 2" class="img-fluid">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -327,7 +388,7 @@
                     <div class="col-12">
                         <div class="owl-carousel owl-theme" id="camnhan-slider">
                             <div class="item">
-                                <div class="row bg-camnhan">
+                                <div class="row">
                                     <div class="col-md-3">
                                         <picture>
                                             <source srcset="./assets/images/camnhan-hinh1.png">
@@ -345,19 +406,40 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="row bg-camnhan">
+                                <div class="row">
                                     <div class="col-md-3">
                                         <picture>
-                                            <source srcset="./assets/images/camnhan-hinh1.png">
-                                            <img src="./assets/images/camnhan-hinh1.png" alt="Cảm nhận - hình 1" class="img-fluid">
+                                            <source srcset="./assets/images/camnhan-hinh2.png">
+                                            <img src="./assets/images/camnhan-hinh2.png" alt="Cảm nhận - hình 2" class="img-fluid">
                                         </picture>
                                     </div>
                                     <div class="col-md-9 my-auto">
                                         <p>
-                                            “ Ngày tựu trường, con được mẹ đưa đến nơi mà các con được thỏa sức tỏa sáng và thăng hoa. Bố mẹ yên tâm làm việc hơn vì nơi ấy có thầy cô thay mặt bố mẹ dẫn dắt con. Nơi có tên con là VASS”
+                                            “Lựa chọn mái trường tốt để gửi gắm con em mình là một quyết định vô cùng quan trọng. Và trường VASS đã thuyết phục chúng tôi về phương pháp giảng dạy và học tập. Chúng tôi
+                                            gửi gắm các con vào mái trường này, cũng là gửi gắm tất cả tình cảm, niềm tin vào các thầy cô và sự tin tưởng vào nỗ lực học tập của các con”
                                         </p>
                                         <p class="phuhuynh">
-                                            Chị Ngân Vũ – Phụ Huynh bé Paul & Rocky.
+                                            Anh Nguyễn Đông Phương Trầm <br />
+                                            Phụ Huynh em Nguyễn Minh Thi
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <picture>
+                                            <source srcset="./assets/images/camnhan-hinh3.png">
+                                            <img src="./assets/images/camnhan-hinh3.png" alt="Cảm nhận - hình 3" class="img-fluid">
+                                        </picture>
+                                    </div>
+                                    <div class="col-md-9 my-auto">
+                                        <p>
+                                            “ Thay mặt cho Phụ huynh của Trường, một lần nữa, chúng tôi xin cảm ơn Quý Thầy cô Trường Tiểu Học, THCS, THPT Việt Mỹ VASS đã nhiệt tâm dạy dỗ và dìu dắt con em chúng tôi ngày một tiến bộ. Cảm ơn chân thành những giọt mồ hôi lao động tâm huyết trong nghề gieo chữ - trồng người của Thầy cô ”
+                                        </p>
+                                        <p class="phuhuynh">
+                                            Chị Nguyễn Hồ Châu Trúc <br />
+                                            Phụ huynh em Phan Châu Minh
                                         </p>
                                     </div>
                                 </div>
@@ -410,13 +492,9 @@
     </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-    <script src="./js/common.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/owl.carousel.min.js"></script>
+
 </body>
 
 </html>

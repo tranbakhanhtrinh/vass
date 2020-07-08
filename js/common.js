@@ -22,6 +22,11 @@ $(function () {
             scrollTop: $('header').offset().top - 80
         }, 600);
     });
+    $(".dk").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#dangky').offset().top - 80
+        }, 600);
+    });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() >= window.innerHeight) {

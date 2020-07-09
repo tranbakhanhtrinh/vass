@@ -350,9 +350,25 @@ main {
     .title {
         margin-bottom: 1rem;
     }
+
+    .gioithieu {
+        &--right {
+            background: #e8e7e4;
+            padding: 1rem 1rem 0;
+
+            picture {
+                img {
+                    margin-bottom: 1rem;
+                }
+
+            }
+        }
+    }
 }
 
 #tieuhoc {
+    padding-bottom: 0;
+
     .tieuhoc-left {
         height: 100%;
         display: flex;
@@ -368,7 +384,13 @@ main {
     }
 }
 
+#trunghoc {
+    padding-bottom: 0;
+}
+
 #camnhan {
+    padding-top: 0;
+
     #camnhan-slider {
         @include background(url('../assets/images/bg-camnhan.png'), no-repeat, cover, center);
         @include border-radius(10px);

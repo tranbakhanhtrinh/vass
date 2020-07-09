@@ -88,6 +88,10 @@ img {
     margin-top: 1rem;
 }
 
+.mb-1rem {
+    margin-bottom: 1rem;
+}
+
 .mb-2rem {
     margin-bottom: 2rem;
 }
@@ -247,18 +251,6 @@ main {
                         display: block;
                     }
                 }
-
-                button {
-                    border: none;
-                    @include border-radius(5px);
-                    margin: auto;
-                    padding: .5rem 1rem;
-                    color: #fff;
-                    font-family: $font_Bold;
-                    background: #f5821f;
-                    text-transform: uppercase;
-                    cursor: pointer;
-                }
             }
         }
 
@@ -278,10 +270,10 @@ main {
                     margin-bottom: 1.5rem;
                     padding-left: 2rem;
                     color: #fff;
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     font-family: $font_AvoBold;
                     background: url('../assets/images/list-icon.png');
-                    background-position: 0px 12px;
+                    background-position: 0px 18px;
                     background-size: 20px 20px;
                     background-repeat: no-repeat;
                 }
@@ -338,6 +330,18 @@ main {
                     }
                 }
             }
+        }
+
+        .dk {
+            border: none;
+            @include border-radius(5px);
+            margin: auto;
+            padding: .5rem 1rem;
+            color: #fff;
+            font-family: $font_Bold;
+            background: #f5821f;
+            text-transform: uppercase;
+            cursor: pointer;
         }
     }
 }
@@ -567,7 +571,7 @@ footer {
                 ul {
                     width: auto;
                     padding-left: .5rem;
-                    padding-top: 4rem;
+                    padding-top: 1rem;
 
                     li {
                         margin-bottom: 2rem;

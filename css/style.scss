@@ -441,7 +441,7 @@ main {
 
 footer {
     padding: 2rem 0;
-    background: #197385;
+    background: #f58220;
 
     p {
         color: #fff;
@@ -551,7 +551,19 @@ footer {
     color: #666666;
 }
 
-@media (min-width: 1900px) {}
+@media (min-width: 2561px) {
+
+    body,
+    html {
+        max-width: 1140px;
+        margin: auto;
+    }
+
+    .fixed-top {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
 
 @media (min-width: 1680px) and (max-width: 1899px) {}
 
